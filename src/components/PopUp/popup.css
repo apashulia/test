@@ -1,0 +1,74 @@
+@keyframes animation {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  1% {
+    transform: scale(0.96) translateY(10px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+  }
+}
+
+.popup-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-body {
+  position: absolute;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  border-radius: 15px;
+  border-color: black;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-animation: animation 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+  padding: 20px;
+}
+
+.popup-body .btn {
+  margin-top: 50px;
+  background-color: rgb(41, 121, 255);
+  color: white;
+  outline: none;
+  border: 0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.popup-body ul {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.popup-body li {
+  list-style: none;
+  text-align: left;
+}
+
+.popup-body li::before {
+  content: "\2022";
+  color: rgb(41, 121, 255);
+  font-weight: bold;
+  display: inline-block;
+  width: 15px;
+  margin-left: -15px;
+}

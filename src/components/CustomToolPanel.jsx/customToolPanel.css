@@ -1,0 +1,38 @@
+.tool-panel {
+
+  padding: 15px 0 15px;
+}
+
+.tool-panel .header-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: fit-content;
+}
+
+.tool-panel .header-wrapper:hover .header {
+  display: block;
+}
+
+.tool-panel .header {
+  display: none;
+  margin: 0;
+}
+
+.tool-panel .icon {
+  cursor: pointer;
+}
+
+.tool-panel li {
+  list-style: none;
+}
+
+.tool-panel li::before {
+  content: "\2022";  
+  color: rgb(41, 121, 255); 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 15px; 
+  margin-left: -15px; 
+}
+
